@@ -1,0 +1,43 @@
+#           Created by Zach Beavers
+#           __________________________
+
+#           Open a script into your main node in the scene
+
+#           In your Scene click on the button you wish to connect to another scene and then go to the "Node" window
+
+#           Click on the "pressed" signal under the "Base Button" tab and hit "Connect" 
+
+#           Connect it to the main script of the scene 
+
+#           Delete the "pass" Then paste this line of code underneath the connected function you just put into the script
+#           (It will need to be tabbed over) 
+
+
+
+get_tree().change_scene()
+  
+  
+  
+ 
+#           So now your script should look something like this 
+#           ("Button" should be whatever the name of your button is)
+
+
+
+func _on_Button_pressed():
+    get_tree().change_scene()
+    
+    
+    
+#           From there you should drag the file from the scene you wish to change too from the "FileSyustem" window
+#           (It should be a .tscn file)
+
+#           And drop the file into your script inbetween the two brakets after the "change_scene" function
+
+#           Here is an example of what it should look like
+#           (Yours will look slightly different from mine depending on file path)
+
+
+func _on_Button_():
+    get_tree().change_scene("res://scenes/Game_Window.tscn")
+    
