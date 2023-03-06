@@ -35,7 +35,7 @@ func _on_Button_pressed():
 #           And drop the file into your script inbetween the two brakets after the "change_scene" function
 
 #           Here is an example of what it should look like
-#           (Yours will look slightly different from mine depending on file path)
+#           (Yours will look slightly different from mine depending on file path and what the scene name is)
 
 
 func _on_Button_():
